@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: runners.CucumberRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 12.104 s <<< FAILURE! - in runners.CucumberRunnerTest
+promo(Test the landing portal)  Time elapsed: 11.594 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.asynchttpclient.ws.WebSocket.sendCloseFrame(int, String)" because "this.socket" is null
+

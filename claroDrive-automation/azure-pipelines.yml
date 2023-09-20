@@ -1,0 +1,69 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- none
+
+variables:
+  - group: vcc-deploy-variable-group
+
+name: Testing-$(deployProjectName)-$(deployEnv)
+
+resources:
+  pipelines:
+    - pipeline: claro-connect-web-ci   # Internal name of the source pipeline, used elsewhere within app-ci YAML 
+      source: dlaargentina.claro-connect-web # Azure Pipelines name of the source pipeline referenced
+      trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
+    - pipeline: claro-connect-iam-front-ci   # Internal name of the source pipeline, used elsewhere within app-ci YAML 
+      source: dlaargentina.claro-connect-iam-front  # Azure Pipelines name of the source pipeline referenced
+      trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
+    - pipeline: claro-connect-iam-ci   # Internal name of the source pipeline, used elsewhere within app-ci YAML 
+      source: dlaargentina.claro-connect-iam  # Azure Pipelines name of the source pipeline referenced
+      trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
+    - pipeline: claro-jitsi-meet-ci   # Internal name of the source pipeline, used elsewhere within app-ci YAML 
+      source: dlaargentina.claro-jitsi-meet  # Azure Pipelines name of the source pipeline referenced
+      trigger: true # Run app-ci pipeline when any run of security-lib-ci completes
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+  - stage: Test
+    jobs:
+      - job: VCC_E2e_Test 
+        pool:
+          vmImage: 'ubuntu-latest'
+        displayName: Running VCC Automated Tests
+        steps:
+          - task: CmdLine@2
+            displayName: Creating environment file for $(deployEnv)
+            env:
+              DeployEnv: $(deployEnv)
+            inputs:
+              workingDirectory: '$(System.DefaultWorkingDirectory)'
+              script: |
+                echo ${DeployEnv}
+                ln -s src/environments/${DeployEnv}.env .env
+          - task: Maven@3
+            displayName: Running Maven tests for $(deployEnv)
+            inputs:
+              mavenPomFile: 'pom.xml'
+              goals: 'test'
+              publishJUnitResults: false
+              javaHomeOption: 'JDKVersion'
+              mavenVersionOption: 'Default'
+              mavenAuthenticateFeed: false
+              effectivePomSkip: false
+              sonarQubeRunAnalysis: false
+              options: '-Dcucumber.filter.tags=$(deployTag)'
+
+          - task: PublishTestResults@2
+            displayName: Publishing test results for $(deployEnv)
+            inputs:
+              testResultsFormat: 'JUnit'
+              testResultsFiles: 'Cucumber.xml'
+              searchFolder: '$(System.DefaultWorkingDirectory)/target/cucumber-reports'
+
+  

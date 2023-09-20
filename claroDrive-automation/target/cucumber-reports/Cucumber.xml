@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.631">
+    <testcase classname="Test the landing portal" name="promo" time="11.195">
+        <failure message="Cannot invoke &quot;org.asynchttpclient.ws.WebSocket.sendCloseFrame(int, String)&quot; because &quot;this.socket&quot; is null" type="java.lang.NullPointerException"><![CDATA[Given Navigate in Claro Drive...............................................passed
+And Validate promo..........................................................passed
+
+StackTrace:
+java.lang.NullPointerException: Cannot invoke "org.asynchttpclient.ws.WebSocket.sendCloseFrame(int, String)" because "this.socket" is null
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.close(NettyWebSocket.java:116)
+	at org.openqa.selenium.devtools.Connection.close(Connection.java:127)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:192)
+	at pages.utils.SeleniumDriver.tearDown(SeleniumDriver.java:83)
+	at steps.AfterActions.tearDown(AfterActions.java:26)
+]]></failure>
+    </testcase>
+</testsuite>

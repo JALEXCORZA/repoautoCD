@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runners.CucumberRunnerTest" time="12.104" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\AMX java\Pruebas Automatizadas\dlaargentina-clarodrive-qa-automation-web-e7589b35b422\dlaargentina-clarodrive-qa-automation-web-e7589b35b422\claroDrive-automation\target\test-classes;D:\AMX java\Pruebas Automatizadas\dlaargentina-clarodrive-qa-automation-web-e7589b35b422\dlaargentina-clarodrive-qa-automation-web-e7589b35b422\claroDrive-automation\target\classes;C:\Users\Juan San Martin\.m2\repository\io\github\cdimascio\java-dotenv\3.0.0\java-dotenv-3.0.0.jar;C:\Users\Juan San Martin\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.2.71\kotlin-stdlib-1.2.71.jar;C:\Users\Juan San Martin\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.2.71\kotlin-stdlib-common-1.2.71.jar;C:\Users\Juan San Martin\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-java\5.6.0\cucumber-java-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-core\5.6.0\cucumber-core-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-gherkin\5.6.0\cucumber-gherkin-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-gherkin-vintage\5.6.0\cucumber-gherkin-vintage-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\tag-expressions\2.0.4\tag-expressions-2.0.4.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-expressions\8.3.1\cucumber-expressions-8.3.1.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\datatable\3.3.1\datatable-3.3.1.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-plugin\5.6.0\cucumber-plugin-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\docstring\5.6.0\docstring-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-junit\5.6.0\cucumber-junit-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0-alpha-4\selenium-java-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0-alpha-4\selenium-api-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0-alpha-4\selenium-chrome-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\com\google\auto\service\auto-service-annotations\1.0-rc6\auto-service-annotations-1.0-rc6.jar;C:\Users\Juan San Martin\.m2\repository\com\google\auto\service\auto-service\1.0-rc6\auto-service-1.0-rc6.jar;C:\Users\Juan San Martin\.m2\repository\com\google\auto\auto-common\0.10\auto-common-0.10.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0-alpha-4\selenium-chromium-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-devtools\4.0.0-alpha-4\selenium-devtools-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0-alpha-4\selenium-http-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0-alpha-4\selenium-json-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0-alpha-4\selenium-edge-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-4\selenium-edgehtml-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0-alpha-4\selenium-firefox-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0-alpha-4\selenium-firefox-xpi-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0-alpha-4\selenium-ie-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0-alpha-4\selenium-opera-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0-alpha-4\selenium-remote-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\com\squareup\okhttp3\okhttp\4.3.0\okhttp-4.3.0.jar;C:\Users\Juan San Martin\.m2\repository\com\squareup\okio\okio\2.4.1\okio-2.4.1.jar;C:\Users\Juan San Martin\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-handler\4.1.31.Final\netty-handler-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-buffer\4.1.31.Final\netty-buffer-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-transport\4.1.31.Final\netty-transport-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-codec\4.1.31.Final\netty-codec-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\org\reactivestreams\reactive-streams\1.0.2\reactive-streams-1.0.2.jar;C:\Users\Juan San Martin\.m2\repository\io\opentracing\opentracing-api\0.33.0\opentracing-api-0.33.0.jar;C:\Users\Juan San Martin\.m2\repository\net\bytebuddy\byte-buddy\1.9.7\byte-buddy-1.9.7.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Juan San Martin\.m2\repository\org\asynchttpclient\async-http-client\2.10.4\async-http-client-2.10.4.jar;C:\Users\Juan San Martin\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.10.4\async-http-client-netty-utils-2.10.4.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-codec-http\4.1.31.Final\netty-codec-http-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-codec-socks\4.1.31.Final\netty-codec-socks-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-handler-proxy\4.1.31.Final\netty-handler-proxy-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-transport-native-epoll\4.1.31.Final\netty-transport-native-epoll-4.1.31.Final-linux-x86_64.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-common\4.1.31.Final\netty-common-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.31.Final\netty-transport-native-unix-common-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.31.Final\netty-transport-native-kqueue-4.1.31.Final-osx-x86_64.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-resolver-dns\4.1.31.Final\netty-resolver-dns-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-resolver\4.1.31.Final\netty-resolver-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-codec-dns\4.1.31.Final\netty-codec-dns-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\com\sun\activation\javax.activation\1.2.0\javax.activation-1.2.0.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0-alpha-4\selenium-safari-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0-alpha-4\selenium-support-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-spring\5.6.0\cucumber-spring-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.1.2.RELEASE\spring-boot-starter-test-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-starter\2.1.2.RELEASE\spring-boot-starter-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot\2.1.2.RELEASE\spring-boot-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.1.2.RELEASE\spring-boot-autoconfigure-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.1.2.RELEASE\spring-boot-starter-logging-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Juan San Martin\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.1\log4j-to-slf4j-2.11.1.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.1\log4j-api-2.11.1.jar;C:\Users\Juan San Martin\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\Users\Juan San Martin\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\Juan San Martin\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-test\2.1.2.RELEASE\spring-boot-test-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.1.2.RELEASE\spring-boot-test-autoconfigure-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\Juan San Martin\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\Juan San Martin\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\Juan San Martin\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\Juan San Martin\.m2\repository\org\mockito\mockito-core\2.23.4\mockito-core-2.23.4.jar;C:\Users\Juan San Martin\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.7\byte-buddy-agent-1.9.7.jar;C:\Users\Juan San Martin\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\Juan San Martin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Juan San Martin\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\Juan San Martin\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Juan San Martin\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-core\5.1.4.RELEASE\spring-core-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-jcl\5.1.4.RELEASE\spring-jcl-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-test\5.1.4.RELEASE\spring-test-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\xmlunit\xmlunit-core\2.6.2\xmlunit-core-2.6.2.jar;C:\Users\Juan San Martin\.m2\repository\org\assertj\assertj-core\3.15.0\assertj-core-3.15.0.jar;C:\Users\Juan San Martin\.m2\repository\de\monochromata\cucumber\reporting-plugin\4.0.39\reporting-plugin-4.0.39.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\gherkin\12.0.0\gherkin-12.0.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\messages\11.1.1\messages-11.1.1.jar;C:\Users\Juan San Martin\.m2\repository\net\masterthought\cucumber-reporting\5.1.1\cucumber-reporting-5.1.1.jar;C:\Users\Juan San Martin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\Juan San Martin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\Juan San Martin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\Users\Juan San Martin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.8\jackson-datatype-jsr310-2.9.8.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\velocity\velocity-engine-core\2.1\velocity-engine-core-2.1.jar;C:\Users\Juan San Martin\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Juan San Martin\.m2\repository\joda-time\joda-time\2.10.1\joda-time-2.10.1.jar;C:\Users\Juan San Martin\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\Juan San Martin\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20191001.1\owasp-java-html-sanitizer-20191001.1.jar;C:\Users\Juan San Martin\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\Juan San Martin\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Juan San Martin\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Juan San Martin\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\Juan San Martin\.m2\repository\org\codehaus\groovy\groovy\2.5.5\groovy-2.5.5.jar;C:\Users\Juan San Martin\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.5\groovy-xml-2.5.5.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\Juan San Martin\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.6\httpmime-4.5.6.jar;C:\Users\Juan San Martin\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Juan San Martin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Juan San Martin\.m2\repository\io\rest-assured\json-path\3.1.1\json-path-3.1.1.jar;C:\Users\Juan San Martin\.m2\repository\org\codehaus\groovy\groovy-json\2.5.5\groovy-json-2.5.5.jar;C:\Users\Juan San Martin\.m2\repository\io\rest-assured\rest-assured-common\3.1.1\rest-assured-common-3.1.1.jar;C:\Users\Juan San Martin\.m2\repository\io\rest-assured\xml-path\3.1.1\xml-path-3.1.1.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.1.2.RELEASE\spring-boot-starter-data-jpa-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.1.2.RELEASE\spring-boot-starter-aop-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-aop\5.1.4.RELEASE\spring-aop-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\aspectj\aspectjweaver\1.9.2\aspectjweaver-1.9.2.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.1.2.RELEASE\spring-boot-starter-jdbc-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\com\zaxxer\HikariCP\3.2.0\HikariCP-3.2.0.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-jdbc\5.1.4.RELEASE\spring-jdbc-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\javax\transaction\javax.transaction-api\1.3\javax.transaction-api-1.3.jar;C:\Users\Juan San Martin\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Juan San Martin\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Juan San Martin\.m2\repository\org\hibernate\hibernate-core\5.3.7.Final\hibernate-core-5.3.7.Final.jar;C:\Users\Juan San Martin\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\Juan San Martin\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Juan San Martin\.m2\repository\org\javassist\javassist\3.23.1-GA\javassist-3.23.1-GA.jar;C:\Users\Juan San Martin\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Juan San Martin\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\Juan San Martin\.m2\repository\com\fasterxml\classmate\1.4.0\classmate-1.4.0.jar;C:\Users\Juan San Martin\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\Juan San Martin\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.4.Final\hibernate-commons-annotations-5.0.4.Final.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\data\spring-data-jpa\2.1.4.RELEASE\spring-data-jpa-2.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\data\spring-data-commons\2.1.4.RELEASE\spring-data-commons-2.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-orm\5.1.4.RELEASE\spring-orm-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-context\5.1.4.RELEASE\spring-context-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-expression\5.1.4.RELEASE\spring-expression-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-tx\5.1.4.RELEASE\spring-tx-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-beans\5.1.4.RELEASE\spring-beans-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-aspects\5.1.4.RELEASE\spring-aspects-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\mysql\mysql-connector-java\8.0.13\mysql-connector-java-8.0.13.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Juan San Martin\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Juan San Martin\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Juan San Martin\.m2\repository\io\github\bonigarcia\webdrivermanager\4.3.1\webdrivermanager-4.3.1.jar;C:\Users\Juan San Martin\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Juan San Martin\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\Juan San Martin\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\Juan San Martin\.m2\repository\org\jsoup\jsoup\1.15.4\jsoup-1.15.4.jar;C:\Users\Juan San Martin\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Juan San Martin\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\Juan San Martin\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Juan San Martin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Juan San Martin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Juan San Martin\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Juan San Martin\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\Juan San Martin\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Mexico_City"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="MX"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\JUANSA~1\AppData\Local\Temp\surefire4029002798305713529\surefirebooter15262605066984778460.jar C:\Users\Juan San Martin\AppData\Local\Temp\surefire4029002798305713529 2023-09-14T17-59-17_722-jvmRun1 surefire16668995363238857428tmp surefire_016069662476572412019tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\AMX java\Pruebas Automatizadas\dlaargentina-clarodrive-qa-automation-web-e7589b35b422\dlaargentina-clarodrive-qa-automation-web-e7589b35b422\claroDrive-automation\target\test-classes;D:\AMX java\Pruebas Automatizadas\dlaargentina-clarodrive-qa-automation-web-e7589b35b422\dlaargentina-clarodrive-qa-automation-web-e7589b35b422\claroDrive-automation\target\classes;C:\Users\Juan San Martin\.m2\repository\io\github\cdimascio\java-dotenv\3.0.0\java-dotenv-3.0.0.jar;C:\Users\Juan San Martin\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.2.71\kotlin-stdlib-1.2.71.jar;C:\Users\Juan San Martin\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.2.71\kotlin-stdlib-common-1.2.71.jar;C:\Users\Juan San Martin\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-java\5.6.0\cucumber-java-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-core\5.6.0\cucumber-core-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-gherkin\5.6.0\cucumber-gherkin-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-gherkin-vintage\5.6.0\cucumber-gherkin-vintage-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\tag-expressions\2.0.4\tag-expressions-2.0.4.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-expressions\8.3.1\cucumber-expressions-8.3.1.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\datatable\3.3.1\datatable-3.3.1.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-plugin\5.6.0\cucumber-plugin-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\docstring\5.6.0\docstring-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-junit\5.6.0\cucumber-junit-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0-alpha-4\selenium-java-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0-alpha-4\selenium-api-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0-alpha-4\selenium-chrome-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\com\google\auto\service\auto-service-annotations\1.0-rc6\auto-service-annotations-1.0-rc6.jar;C:\Users\Juan San Martin\.m2\repository\com\google\auto\service\auto-service\1.0-rc6\auto-service-1.0-rc6.jar;C:\Users\Juan San Martin\.m2\repository\com\google\auto\auto-common\0.10\auto-common-0.10.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0-alpha-4\selenium-chromium-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-devtools\4.0.0-alpha-4\selenium-devtools-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0-alpha-4\selenium-http-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0-alpha-4\selenium-json-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0-alpha-4\selenium-edge-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-4\selenium-edgehtml-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0-alpha-4\selenium-firefox-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0-alpha-4\selenium-firefox-xpi-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0-alpha-4\selenium-ie-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0-alpha-4\selenium-opera-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0-alpha-4\selenium-remote-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\com\squareup\okhttp3\okhttp\4.3.0\okhttp-4.3.0.jar;C:\Users\Juan San Martin\.m2\repository\com\squareup\okio\okio\2.4.1\okio-2.4.1.jar;C:\Users\Juan San Martin\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-handler\4.1.31.Final\netty-handler-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-buffer\4.1.31.Final\netty-buffer-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-transport\4.1.31.Final\netty-transport-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-codec\4.1.31.Final\netty-codec-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\org\reactivestreams\reactive-streams\1.0.2\reactive-streams-1.0.2.jar;C:\Users\Juan San Martin\.m2\repository\io\opentracing\opentracing-api\0.33.0\opentracing-api-0.33.0.jar;C:\Users\Juan San Martin\.m2\repository\net\bytebuddy\byte-buddy\1.9.7\byte-buddy-1.9.7.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Juan San Martin\.m2\repository\org\asynchttpclient\async-http-client\2.10.4\async-http-client-2.10.4.jar;C:\Users\Juan San Martin\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.10.4\async-http-client-netty-utils-2.10.4.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-codec-http\4.1.31.Final\netty-codec-http-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-codec-socks\4.1.31.Final\netty-codec-socks-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-handler-proxy\4.1.31.Final\netty-handler-proxy-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-transport-native-epoll\4.1.31.Final\netty-transport-native-epoll-4.1.31.Final-linux-x86_64.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-common\4.1.31.Final\netty-common-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.31.Final\netty-transport-native-unix-common-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.31.Final\netty-transport-native-kqueue-4.1.31.Final-osx-x86_64.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-resolver-dns\4.1.31.Final\netty-resolver-dns-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-resolver\4.1.31.Final\netty-resolver-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\io\netty\netty-codec-dns\4.1.31.Final\netty-codec-dns-4.1.31.Final.jar;C:\Users\Juan San Martin\.m2\repository\com\sun\activation\javax.activation\1.2.0\javax.activation-1.2.0.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0-alpha-4\selenium-safari-driver-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0-alpha-4\selenium-support-4.0.0-alpha-4.jar;C:\Users\Juan San Martin\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\cucumber-spring\5.6.0\cucumber-spring-5.6.0.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.1.2.RELEASE\spring-boot-starter-test-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-starter\2.1.2.RELEASE\spring-boot-starter-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot\2.1.2.RELEASE\spring-boot-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.1.2.RELEASE\spring-boot-autoconfigure-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.1.2.RELEASE\spring-boot-starter-logging-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Juan San Martin\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.1\log4j-to-slf4j-2.11.1.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.1\log4j-api-2.11.1.jar;C:\Users\Juan San Martin\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\Users\Juan San Martin\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\Juan San Martin\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-test\2.1.2.RELEASE\spring-boot-test-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.1.2.RELEASE\spring-boot-test-autoconfigure-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\Juan San Martin\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\Juan San Martin\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\Juan San Martin\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\Juan San Martin\.m2\repository\org\mockito\mockito-core\2.23.4\mockito-core-2.23.4.jar;C:\Users\Juan San Martin\.m2\repository\net\bytebuddy\byte-buddy-agent\1.9.7\byte-buddy-agent-1.9.7.jar;C:\Users\Juan San Martin\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\Juan San Martin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Juan San Martin\.m2\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;C:\Users\Juan San Martin\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Juan San Martin\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-core\5.1.4.RELEASE\spring-core-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-jcl\5.1.4.RELEASE\spring-jcl-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-test\5.1.4.RELEASE\spring-test-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\xmlunit\xmlunit-core\2.6.2\xmlunit-core-2.6.2.jar;C:\Users\Juan San Martin\.m2\repository\org\assertj\assertj-core\3.15.0\assertj-core-3.15.0.jar;C:\Users\Juan San Martin\.m2\repository\de\monochromata\cucumber\reporting-plugin\4.0.39\reporting-plugin-4.0.39.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\gherkin\12.0.0\gherkin-12.0.0.jar;C:\Users\Juan San Martin\.m2\repository\io\cucumber\messages\11.1.1\messages-11.1.1.jar;C:\Users\Juan San Martin\.m2\repository\net\masterthought\cucumber-reporting\5.1.1\cucumber-reporting-5.1.1.jar;C:\Users\Juan San Martin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\Users\Juan San Martin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\Juan San Martin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\Users\Juan San Martin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.8\jackson-datatype-jsr310-2.9.8.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\velocity\velocity-engine-core\2.1\velocity-engine-core-2.1.jar;C:\Users\Juan San Martin\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\Juan San Martin\.m2\repository\joda-time\joda-time\2.10.1\joda-time-2.10.1.jar;C:\Users\Juan San Martin\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\Juan San Martin\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20191001.1\owasp-java-html-sanitizer-20191001.1.jar;C:\Users\Juan San Martin\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\Juan San Martin\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Juan San Martin\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Juan San Martin\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\Juan San Martin\.m2\repository\org\codehaus\groovy\groovy\2.5.5\groovy-2.5.5.jar;C:\Users\Juan San Martin\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.5\groovy-xml-2.5.5.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\Juan San Martin\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.6\httpmime-4.5.6.jar;C:\Users\Juan San Martin\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Juan San Martin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Juan San Martin\.m2\repository\io\rest-assured\json-path\3.1.1\json-path-3.1.1.jar;C:\Users\Juan San Martin\.m2\repository\org\codehaus\groovy\groovy-json\2.5.5\groovy-json-2.5.5.jar;C:\Users\Juan San Martin\.m2\repository\io\rest-assured\rest-assured-common\3.1.1\rest-assured-common-3.1.1.jar;C:\Users\Juan San Martin\.m2\repository\io\rest-assured\xml-path\3.1.1\xml-path-3.1.1.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.1.2.RELEASE\spring-boot-starter-data-jpa-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.1.2.RELEASE\spring-boot-starter-aop-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-aop\5.1.4.RELEASE\spring-aop-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\aspectj\aspectjweaver\1.9.2\aspectjweaver-1.9.2.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.1.2.RELEASE\spring-boot-starter-jdbc-2.1.2.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\com\zaxxer\HikariCP\3.2.0\HikariCP-3.2.0.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-jdbc\5.1.4.RELEASE\spring-jdbc-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\javax\transaction\javax.transaction-api\1.3\javax.transaction-api-1.3.jar;C:\Users\Juan San Martin\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Juan San Martin\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Juan San Martin\.m2\repository\org\hibernate\hibernate-core\5.3.7.Final\hibernate-core-5.3.7.Final.jar;C:\Users\Juan San Martin\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\Juan San Martin\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Juan San Martin\.m2\repository\org\javassist\javassist\3.23.1-GA\javassist-3.23.1-GA.jar;C:\Users\Juan San Martin\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Juan San Martin\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\Juan San Martin\.m2\repository\com\fasterxml\classmate\1.4.0\classmate-1.4.0.jar;C:\Users\Juan San Martin\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\Juan San Martin\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.4.Final\hibernate-commons-annotations-5.0.4.Final.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\data\spring-data-jpa\2.1.4.RELEASE\spring-data-jpa-2.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\data\spring-data-commons\2.1.4.RELEASE\spring-data-commons-2.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-orm\5.1.4.RELEASE\spring-orm-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-context\5.1.4.RELEASE\spring-context-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-expression\5.1.4.RELEASE\spring-expression-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-tx\5.1.4.RELEASE\spring-tx-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-beans\5.1.4.RELEASE\spring-beans-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\org\springframework\spring-aspects\5.1.4.RELEASE\spring-aspects-5.1.4.RELEASE.jar;C:\Users\Juan San Martin\.m2\repository\mysql\mysql-connector-java\8.0.13\mysql-connector-java-8.0.13.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\poi\poi-ooxml\4.1.2\poi-ooxml-4.1.2.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\poi\poi\4.1.2\poi-4.1.2.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Juan San Martin\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\commons\commons-compress\1.19\commons-compress-1.19.jar;C:\Users\Juan San Martin\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\Juan San Martin\.m2\repository\io\github\bonigarcia\webdrivermanager\4.3.1\webdrivermanager-4.3.1.jar;C:\Users\Juan San Martin\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Juan San Martin\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\Juan San Martin\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\Juan San Martin\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\Juan San Martin\.m2\repository\org\jsoup\jsoup\1.15.4\jsoup-1.15.4.jar;C:\Users\Juan San Martin\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Juan San Martin\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\Juan San Martin\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Juan San Martin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Juan San Martin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Juan San Martin\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Juan San Martin\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\Juan San Martin\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Juan San Martin"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\AMX java\Pruebas Automatizadas\dlaargentina-clarodrive-qa-automation-web-e7589b35b422\dlaargentina-clarodrive-qa-automation-web-e7589b35b422\claroDrive-automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\JUANSA~1\AppData\Local\Temp\surefire4029002798305713529\surefirebooter15262605066984778460.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
+    <property name="user.name" value="Juan San Martin"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="browser" value="edge"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Juan San Martin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\JUANSA~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.8"/>
+    <property name="cucumber.filter.tags" value="@promo"/>
+    <property name="user.dir" value="D:\AMX java\Pruebas Automatizadas\dlaargentina-clarodrive-qa-automation-web-e7589b35b422\dlaargentina-clarodrive-qa-automation-web-e7589b35b422\claroDrive-automation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="headless" value="active"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Python311\Scripts\;C:\Program Files\Python311\;C:\Program Files\Eclipse Adoptium\jdk-11.0.18.10-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Maven\apache-maven-3.9.4\bin;C:\Program Files\Java\jdk-17\bin;C:\Users\Juan San Martin\AppData\Local\Microsoft\WindowsApps;;C:\Users\Juan San Martin\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.8+9-LTS-211"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="promo" classname="Test the landing portal" time="11.594">
+    <error message="Cannot invoke &quot;org.asynchttpclient.ws.WebSocket.sendCloseFrame(int, String)&quot; because &quot;this.socket&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.asynchttpclient.ws.WebSocket.sendCloseFrame(int, String)" because "this.socket" is null
+</error>
+    <system-out><![CDATA[17:59:19.069 [main] INFO org.springframework.core.KotlinDetector - Kotlin reflection implementation not found at runtime, related features won't be available.
+17:59:19.074 [main] DEBUG org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@15713d56
+
+@LandingTest @promo
+Scenario: promo                 # src/test/resources/features/Landing.feature:17
+17:59:19.736 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution edge=116 in cache (valid until 18:36:09 14/09/2023 CST)
+17:59:19.740 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution edge116=116.0.1938.81 in cache (valid until 13:58:53 15/09/2023 CST)
+17:59:19.740 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using msedgedriver 116.0.1938.81 (resolved driver for Edge 116)
+17:59:19.759 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver msedgedriver 116.0.1938.81 found in cache
+17:59:19.760 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\Juan San Martin\.cache\selenium\msedgedriver\win64\116.0.1938.81\msedgedriver.exe
+17:59:19.854 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+17:59:19.857 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+17:59:19.858 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+17:59:19.875 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+17:59:19.877 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+17:59:19.878 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 17
+17:59:19.880 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+17:59:19.881 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+17:59:19.882 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+17:59:19.886 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:224)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:218)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:212)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:80)
+	at io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:162)
+	at io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:207)
+	at io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:201)
+	at io.netty.util.HashedWheelTimer.<clinit>(HashedWheelTimer.java:88)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:97)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:87)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:71)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:28)
+	at org.openqa.selenium.remote.http.netty.CreateNettyClient.apply(CreateNettyClient.java:34)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.<init>(NettyHttpHandler.java:39)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:68)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:71)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:60)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:50)
+	at org.openqa.selenium.edge.EdgeDriver.toExecutor(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:120)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:117)
+	at config.WebDriverFactory.edgeD(WebDriverFactory.java:196)
+	at config.WebDriverFactory.createWebDriver(WebDriverFactory.java:44)
+	at pages.utils.SeleniumDriver.<init>(SeleniumDriver.java:55)
+	at pages.utils.SeleniumDriver.setUpDriver(SeleniumDriver.java:77)
+	at steps.BeforeActions.SetUp(BeforeActions.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:61)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:31)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:20)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:47)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+17:59:19.887 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+17:59:19.889 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @6a41eaa2
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:560)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:334)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:325)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:212)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:80)
+	at io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:162)
+	at io.netty.util.ResourceLeakDetector.<init>(ResourceLeakDetector.java:207)
+	at io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:201)
+	at io.netty.util.HashedWheelTimer.<clinit>(HashedWheelTimer.java:88)
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:97)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:87)
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:71)
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:28)
+	at org.openqa.selenium.remote.http.netty.CreateNettyClient.apply(CreateNettyClient.java:34)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.<init>(NettyHttpHandler.java:39)
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:68)
+	at org.openqa.selenium.remote.http.HttpClient$Factory.createClient(HttpClient.java:71)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:60)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:50)
+	at org.openqa.selenium.edge.EdgeDriver.toExecutor(EdgeDriver.java:141)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:120)
+	at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:117)
+	at config.WebDriverFactory.edgeD(WebDriverFactory.java:196)
+	at config.WebDriverFactory.createWebDriver(WebDriverFactory.java:44)
+	at pages.utils.SeleniumDriver.<init>(SeleniumDriver.java:55)
+	at pages.utils.SeleniumDriver.setUpDriver(SeleniumDriver.java:77)
+	at steps.BeforeActions.SetUp(BeforeActions.java:18)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:61)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:31)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:20)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:47)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+17:59:19.890 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+17:59:19.890 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+17:59:19.892 [main] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 4271898624 bytes (maybe)
+17:59:19.893 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\JUANSA~1\AppData\Local\Temp (java.io.tmpdir)
+17:59:19.893 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+17:59:19.895 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+17:59:19.895 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+17:59:19.897 [main] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+17:59:19.897 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+17:59:19.897 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@108531c2
+17:59:19.906 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+17:59:19.963 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.2, TLSv1.1, TLSv1] 
+17:59:19.963 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+17:59:19.986 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+17:59:19.996 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+17:59:19.996 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+17:59:20.066 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+17:59:20.066 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+17:59:20.077 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 24
+17:59:20.077 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 24
+17:59:20.077 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+17:59:20.077 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+17:59:20.077 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+17:59:20.077 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+17:59:20.077 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+17:59:20.077 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+17:59:20.077 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+17:59:20.077 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+17:59:20.077 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+17:59:20.095 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+17:59:20.096 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+17:59:20.096 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+17:59:22.153 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 21856 (auto-detected)
+17:59:22.155 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+17:59:22.155 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+17:59:22.161 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+17:59:22.162 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+17:59:22.181 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 50:2b:73:ff:fe:e5:21:b0 (auto-detected)
+17:59:22.221 [AsyncHttpClient-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+17:59:22.221 [AsyncHttpClient-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+17:59:22.221 [AsyncHttpClient-3-1] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@24ad2275
+17:59:22.233 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]' for 'POST' to '/session'
+17:59:22.252 [AsyncHttpClient-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+17:59:22.252 [AsyncHttpClient-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+17:59:22.252 [AsyncHttpClient-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+17:59:22.252 [AsyncHttpClient-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+17:59:22.801 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-4 (java windows)
+Content-Length: 371
+Content-Type: application/json; charset=utf-8
+host: localhost:18552
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 849
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+17:59:22.807 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:18552 for channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]
+17:59:22.930 [AsyncHttpClient-7-1] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0x7547d2c7, L:/127.0.0.1:57819 - R:localhost/127.0.0.1:57811]' for 'GET' to '/json/version'
+17:59:22.938 [AsyncHttpClient-7-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-4 (java windows)
+host: localhost:57811
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Security-Policy: frame-ancestors 'none'
+Content-Length: 437
+Content-Type: application/json; charset=UTF-8
+
+17:59:22.938 [AsyncHttpClient-7-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:57811 for channel [id: 0x7547d2c7, L:/127.0.0.1:57819 - R:localhost/127.0.0.1:57811]
+17:59:22.948 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x36dab7c527d87f3f
+17:59:22.951 [AsyncHttpClient-9-1] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0x0495477c, L:/127.0.0.1:57820 - R:localhost/127.0.0.1:57811]' for 'GET' to '/devtools/browser/d8f4400e-070f-4a3d-b28d-3104c1d39832'
+17:59:22.959 [AsyncHttpClient-9-1] DEBUG org.asynchttpclient.netty.handler.WebSocketHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/d8f4400e-070f-4a3d-b28d-3104c1d39832 HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: l5wGntcXeQJmQEG3ZEirtw==
+sec-websocket-version: 13
+origin: http://localhost:57811
+host: localhost:57811
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 403 Forbidden
+Content-Length: 241
+Content-Type: text/html
+
+17:59:22.960 [AsyncHttpClient-9-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Closing Channel [id: 0x0495477c, L:/127.0.0.1:57820 - R:localhost/127.0.0.1:57811] 
+17:59:22.961 [AsyncHttpClient-9-1] DEBUG org.asynchttpclient.netty.handler.WebSocketHandler - Channel Closed: [id: 0x0495477c, L:/127.0.0.1:57820 ! R:localhost/127.0.0.1:57811] with attribute DISCARD
+17:59:22.965 [Forwarding maximizeCurrentWindow on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]' for 'POST' to 'http://localhost:18552/session/8e18a09ffa100d19e8f5a64dc02471ec/window/maximize'
+17:59:22.965 [Forwarding maximizeCurrentWindow on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552] for POST '/session/8e18a09ffa100d19e8f5a64dc02471ec/window/maximize'
+17:59:23.100 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/8e18a09ffa100d19e8f5a64dc02471ec/window/maximize HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-4 (java windows)
+Content-Length: 3
+Content-Type: application/json; charset=utf-8
+host: localhost:18552
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 52
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+17:59:23.100 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:18552 for channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]
+17:59:23.106 [Forwarding setTimeout on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]' for 'POST' to 'http://localhost:18552/session/8e18a09ffa100d19e8f5a64dc02471ec/timeouts'
+17:59:23.106 [Forwarding setTimeout on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552] for POST '/session/8e18a09ffa100d19e8f5a64dc02471ec/timeouts'
+17:59:23.107 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/8e18a09ffa100d19e8f5a64dc02471ec/timeouts HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-4 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:18552
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+17:59:23.107 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:18552 for channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]
+17:59:23.110 [Forwarding setTimeout on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]' for 'POST' to 'http://localhost:18552/session/8e18a09ffa100d19e8f5a64dc02471ec/timeouts'
+17:59:23.110 [Forwarding setTimeout on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552] for POST '/session/8e18a09ffa100d19e8f5a64dc02471ec/timeouts'
+17:59:23.111 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/8e18a09ffa100d19e8f5a64dc02471ec/timeouts HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-4 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:18552
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+17:59:23.111 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:18552 for channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]
+17:59:23.113 [Forwarding getCurrentWindowHandle on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]' for 'GET' to 'http://localhost:18552/session/8e18a09ffa100d19e8f5a64dc02471ec/window'
+17:59:23.113 [Forwarding getCurrentWindowHandle on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552] for GET '/session/8e18a09ffa100d19e8f5a64dc02471ec/window'
+17:59:23.114 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/8e18a09ffa100d19e8f5a64dc02471ec/window HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-4 (java windows)
+Cache-Control: no-cache
+host: localhost:18552
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 44
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+17:59:23.115 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:18552 for channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]
+Window ->DDA6AD22800A80A6E1CFF84EA6529C78
+17:59:23.211 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:18552 : 1
+https://www.clarodrive.com/
+EdgeDriver: msedge on WINDOWS (8e18a09ffa100d19e8f5a64dc02471ec)
+17:59:23.860 [Forwarding get on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]' for 'POST' to 'http://localhost:18552/session/8e18a09ffa100d19e8f5a64dc02471ec/url'
+17:59:23.861 [Forwarding get on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552] for POST '/session/8e18a09ffa100d19e8f5a64dc02471ec/url'
+17:59:23.948 [AsyncHttpClient-timer-6-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:57811 : 1
+17:59:24.581 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/8e18a09ffa100d19e8f5a64dc02471ec/url HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-4 (java windows)
+Content-Length: 57
+Content-Type: application/json; charset=utf-8
+host: localhost:18552
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 14
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+17:59:24.581 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:18552 for channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]
+17:59:25.052 [AsyncHttpClient-timer-6-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:57811 : 1
+17:59:25.411 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:18552 : 1
+17:59:26.154 [AsyncHttpClient-timer-6-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:57811 : 1
+17:59:26.512 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:18552 : 1
+17:59:27.258 [AsyncHttpClient-timer-6-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:57811 : 1
+17:59:27.613 [AsyncHttpClient-timer-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:18552 : 1
+17:59:28.348 [AsyncHttpClient-timer-6-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:57811 : 1
+  Given Navigate in Claro Drive # steps.LandingSteps.navigateInClaroDrive()
+17:59:28.586 [Forwarding screenshot on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]' for 'GET' to 'http://localhost:18552/session/8e18a09ffa100d19e8f5a64dc02471ec/screenshot'
+17:59:28.587 [Forwarding screenshot on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552] for GET '/session/8e18a09ffa100d19e8f5a64dc02471ec/screenshot'
+17:59:29.363 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/8e18a09ffa100d19e8f5a64dc02471ec/screenshot HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-4 (java windows)
+Cache-Control: no-cache
+host: localhost:18552
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 1707620
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+17:59:29.372 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:18552 for channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]
+17:59:29.448 [AsyncHttpClient-timer-6-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:57811 : 1
+APA: {"PR":{"toBeDisabled":false,"allowedFree":false,"paymentMethods":{"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"$${v} USD","currencySymbol":"$","planName":"NONE","currency":"USD","type":"NONE"},"25":{"smsKey":"Drive25","price":0,"isPopular":false},"1024":{"smsKey":"Drive1T","price":10.5,"isPopular":false},"150":{"smsKey":"Drive150","price":2,"isPopular":true},"75":{"smsKey":"Drive75","price":1,"isPopular":false}},"exclude":false},"claromovil":{"displayName":"Claro mÃ³vil","logo":"\/img\/partners\/claro-movil","gateway":"GATEWAYS:::smtgate"}},"name":"Puerto Rico","icon":"\/img\/PR_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::PR:::paymentMethods:::claronegocio","isActive":true}},"region":"puertorico","isActive":true,"providers":{"choose":["PROVIDERS:::claromovil","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claromovil"],"register":["PROVIDERS:::claromovil"]}},"SV":{"toBeDisabled":false,"allowedFree":false,"paymentMethods":{"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"$${v} USD","currencySymbol":"$","planName":"NONE","currency":"USD","type":"NONE"},"25":{"smsKey":"Drive25","price":0,"isPopular":false},"1024":{"smsKey":"Drive1T","price":9.05,"isPopular":false},"150":{"smsKey":"Drive150","price":2,"isPopular":true},"75":{"smsKey":"Drive75","price":1.05,"isPopular":false}},"exclude":false},"claromovil":{"displayName":"Claro mÃ³vil","logo":"\/img\/partners\/claro-movil","gateway":"GATEWAYS:::smtgate"}},"name":"El Salvador","icon":"\/img\/SV_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::SV:::paymentMethods:::claronegocio","isActive":true}},"region":"elsalvador","isActive":true,"providers":{"choose":["PROVIDERS:::claromovil","PROVIDERS:::claronegocio","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claromovil"],"register":["PROVIDERS:::claromovil"]}},"UY":{"toBeDisabled":false,"allowedFree":false,"paymentMethods":{"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"100":{"smsKey":"Drive100","price":50,"isPopular":true},"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"$U${v} UYU","currencySymbol":"$U","planName":"NONE","currency":"DOP","type":"NONE"},"25":{"smsKey":"Drive25","price":0,"isPopular":false},"300":{"smsKey":"Drive300","price":120,"isPopular":false},"50":{"smsKey":"Drive50","price":30,"isPopular":false}},"exclude":false},"claromovil":{"displayName":"Claro mÃ³vil","logo":"\/img\/partners\/claro-movil","gateway":"GATEWAYS:::smtgate"}},"name":"Uruguay","icon":"\/img\/UY_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::UY:::paymentMethods:::claronegocio","isActive":false}},"region":"uruguay","isActive":true,"providers":{"choose":["PROVIDERS:::claromovil","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claromovil"],"register":["PROVIDERS:::claromovil"]}},"HN":{"toBeDisabled":false,"allowedFree":false,"paymentMethods":{"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"L${v} HNL","currencySymbol":"L","planName":"NONE","currency":"HNL","type":"NONE"},"25":{"smsKey":"Drive25","price":0,"isPopular":false},"1024":{"smsKey":"Drive1T","price":216.9,"isPopular":false},"150":{"smsKey":"Drive150","price":47.2,"isPopular":true},"75":{"smsKey":"Drive75","price":24.5,"isPopular":false}},"exclude":false},"claromovil":{"displayName":"Claro mÃ³vil","logo":"\/img\/partners\/claro-movil","gateway":"GATEWAYS:::smtgate"}},"name":"Honduras","icon":"\/img\/HN_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::HN:::paymentMethods:::claronegocio","isActive":true}},"region":"honduras","isActive":true,"providers":{"choose":["PROVIDERS:::claromovil","PROVIDERS:::claronegocio","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claromovil"],"register":["PROVIDERS:::claromovil"]}},"CL":{"toBeDisabled":false,"allowedFree":false,"isActvie":true,"paymentMethods":{"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"$${v} CLP","currencySymbol":"$","planName":"NONE","currency":"CLP","type":"NONE"},"25":{"smskey":"Drive25","price":0,"isPopular":false},"1024":{"smsKey":"Drive1T","price":6490,"isPopular":false},"150":{"smsKey":"Drive150","price":1490,"isPopular":true},"75":{"smsKey":"Drive75","price":750,"isPopular":false}},"exclude":false},"claromovil":{"displayName":"Claro mÃ³vil","logo":"\/img\/partners\/claro-movil","gateway":"GATEWAYS:::smtgate"}},"name":"Chile","icon":"\/img\/CL_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::CL:::paymentMethods:::claronegocio","isActive":true}},"region":"chile","providers":{"choose":["PROVIDERS:::claromovil","PROVIDERS:::claronegocio","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claromovil"],"register":["PROVIDERS:::claromovil"]}},"PY":{"toBeDisabled":false,"allowedFree":false,"paymentMethods":{"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"100":{"smsKey":"Drive100","price":5000,"isPopular":true},"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"Gs ${v}","currencySymbol":"Gs","planName":"NONE","currency":"PYG","type":"NONE"},"25":{"smsKey":"Drive25","price":0,"isPopular":false},"300":{"smsKey":"Drive300","price":10000,"isPopular":false},"50":{"smsKey":"Drive50","price":3000,"isPopular":false}},"exclude":false},"claromovil":{"displayName":"Claro mÃ³vil","logo":"\/img\/partners\/claro-movil","gateway":"GATEWAYS:::smtgate"}},"name":"Paraguay","icon":"\/img\/PY_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::UY:::paymentMethods:::claronegocio","isActive":false}},"region":"paraguay","isActive":true,"providers":{"choose":["PROVIDERS:::claromovil","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claromovil"],"register":["PROVIDERS:::claromovil"]}},"MX":{"toBeDisabled":false,"allowedFree":true,"paymentMethods":{"telmex":{"displayName":"Telmex","logo":"\/img\/partners\/telmex","gateway":"GATEWAYS:::telmexmexicogate"},"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"100":{"smsKey":"Drive100","price":0,"isPopular":false},"200":{"smsKey":"Drive200","price":19,"isPopular":false},"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"$${v} MXN","currencySymbol":"$","planName":"NONE","currency":"MXN","type":"NONE"},"300":{"smsKey":"Drive300","price":36,"isPopular":true},"1024":{"smsKey":"Drive1T","price":169,"isPopular":false}},"exclude":false},"telcel":{"multipleFreePlans":true,"displayName":"Telcel","plans":{"100":{"smsKey":"Drive100","price":0,"isPopular":false,"planName":"TEXT_PGS_OFFERS_MEXICO_100_TELMEXMEXICO_SUSCRIPCION_100GB","type":"POSTPAID"},"200":{"smsKey":"Drive200","price":19,"isPopular":false},"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"$${v} MXN","currencySymbol":"$","planName":"NONE","currency":"MXN","type":"NONE"},"25":{"smsKey":"Drive100","price":0,"isPopular":false,"planName":"TEXT_PGS_OFFERS_MEXICO_25_TELMEXMEXICO_SUSCRIPCION_25GB","type":"PREPAID"},"300":{"smsKey":"Drive300","price":36,"isPopular":true},"1024":{"smsKey":"Drive1T","price":169,"isPopular":false}},"logo":"\/img\/partners\/telcel","gateway":"GATEWAYS:::smtgate"},"creditcard":{"displayName":"Tarjeta de crÃ©dito","plans":{"200":{"smsKey":"Drive200","price":19,"isPopular":false},"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"$${v} MXN","currencySymbol":"$","currency":"MXN"},"300":{"smsKey":"Drive300","price":36,"isPopular":true},"1024":{"smsKey":"Drive1T","price":169,"isPopular":false}},"logo":"\/img\/partners\/credit-card","gateway":"GATEWAYS:::claropagosgate"}},"name":"MÃ©xico","icon":"\/img\/MX_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::MX:::paymentMethods:::claronegocio","isActive":true}},"region":"mexico","isActive":true,"providers":{"choose":["PROVIDERS:::telcel","PROVIDERS:::telmex","PROVIDERS:::email","PROVIDERS:::claromusica","PROVIDERS:::clarovideo"],"login":["PROVIDERS:::claromusica","PROVIDERS:::clarovideo"],"free":["PROVIDERS:::telmex","PROVIDERS:::telcel"],"register":["PROVIDERS:::telmex","PROVIDERS:::telcel","PROVIDERS:::claromusica","PROVIDERS:::clarovideo","PROVIDERS:::email"]}},"DO":{"toBeDisabled":false,"allowedFree":false,"paymentMethods":{"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"RD$${v} DOP","currencySymbol":"$","planName":"NONE","currency":"DOP","type":"NONE"},"25":{"smsKey":"Drive25","price":0,"isPopular":false},"1024":{"smsKey":"Drive1T","price":450,"isPopular":false},"150":{"smsKey":"Drive150","price":115,"isPopular":true},"75":{"smsKey":"Drive75","price":50,"isPopular":false}},"exclude":false},"claromovil":{"displayName":"Claro mÃ³vil","logo":"\/img\/partners\/claro-movil","gateway":"GATEWAYS:::smtgate"}},"name":"RepÃºblica Dominicana","icon":"\/img\/DO_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::DO:::paymentMethods:::claronegocio","isActive":true}},"region":"dominicana","isActive":true,"providers":{"choose":["PROVIDERS:::claromovil","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claromovil"],"register":["PROVIDERS:::claromovil"]}},"CO":{"toBeDisabled":false,"allowedFree":false,"paymentMethods":{"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"100":{"smsKey":"Drive100","price":0,"isPopular":false},"200":{"smsKey":"Drive200","price":3500,"isPopular":false},"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"$${v} COP","currencySymbol":"$","planName":"NONE","currency":"COP","type":"NONE"},"400":{"smsKey":"Drive400","price":6000,"isPopular":true},"2048":{"smsKey":"Drive2T","price":28000,"isPopular":false},"1024":{"smsKey":"Drive1T","price":17000,"isPopular":false}},"exclude":false},"fijaclaro":{"displayName":"Claro hogar","logo":"\/img\/partners\/claro-hogar","gateway":"GATEWAYS:::clarocolombiagate"},"claromovil":{"displayName":"Claro mÃ³vil","logo":"\/img\/partners\/claro-movil","gateway":"GATEWAYS:::smtgate"}},"name":"Colombia","icon":"\/img\/CO_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::CO:::paymentMethods:::claronegocio","isActive":true}},"region":"colombia","isActive":true,"providers":{"choose":["PROVIDERS:::claromovil","PROVIDERS:::fijaclaro","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claromovil","PROVIDERS:::fijaclaro"],"register":["PROVIDERS:::claromovil","PROVIDERS:::fijaclaro"]}},"GT":{"toBeDisabled":false,"allowedFree":false,"paymentMethods":{"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"Q${v} GTQ","currencySymbol":"Q","planName":"NONE","currency":"GTQ","type":"NONE"},"25":{"smsKey":"Drive25","price":0,"isPopular":false},"1024":{"smsKey":"Drive1T","price":63.3,"isPopular":false},"150":{"smsKey":"Drive150","price":14.45,"isPopular":true},"75":{"smsKey":"Drive75","price":7.45,"isPopular":false}},"exclude":false},"claromovil":{"displayName":"Claro mÃ³vil","logo":"\/img\/partners\/claro-movil","gateway":"GATEWAYS:::smtgate"}},"name":"Guatemala","icon":"\/img\/GT_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::GT:::paymentMethods:::claronegocio","isActive":true}},"region":"guatemala","isActive":true,"providers":{"choose":["PROVIDERS:::claromovil","PROVIDERS:::claronegocio","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claromovil"],"register":["PROVIDERS:::claromovil"]}},"CR":{"toBeDisabled":false,"allowedFree":false,"isActvie":true,"paymentMethods":{"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"&#8353;${v} CRC","currencySymbol":"&#8353;","planName":"NONE","currency":"CRC","type":"NONE"},"25":{"smskey":"Drive25","price":0,"isPopular":false},"1024":{"smsKey":"Drive1T","price":5150,"isPopular":false},"150":{"smsKey":"Drive150","price":1120,"isPopular":true},"75":{"smsKey":"Drive75","price":580,"isPopular":false}},"exclude":false},"claromovil":{"displayName":"Claro mÃ³vil","logo":"\/img\/partners\/claro-movil","gateway":"GATEWAYS:::smtgate"}},"name":"Costa Rica","icon":"\/img\/CR_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::CR:::paymentMethods:::claronegocio","isActive":true}},"region":"costarica","providers":{"choose":["PROVIDERS:::claromovil","PROVIDERS:::claronegocio","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claromovil"],"register":["PROVIDERS:::claromovil"]}},"BR":{"toBeDisabled":false,"allowedFree":false,"paymentMethods":{"claro":{"displayName":"Claro","logo":"\/img\/partners\/claro","gateway":"GATEWAYS:::smtgate"},"claronegocio":{"displayName":"NegÃ³cio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"R$${v}","currencySymbol":"$","planName":"NONE","currency":"R","type":"NONE"},"25":{"smsKey":"Drive25","price":0,"isPopular":false},"1024":{"quotaUnity":"QUOTA_UNITIES:::tb","smsKey":"Drive1T","price":26.9,"isPopular":false},"150":{"smsKey":"Drive150","price":5.99,"isPopular":true},"75":{"smsKey":"Drive75","price":2.99,"isPopular":false}},"exclude":false}},"name":"Brasil","icon":"\/img\/BR_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::BR:::paymentMethods:::claronegocio","isActive":true}},"region":"brasil","isActive":true,"providers":{"choose":["PROVIDERS:::claro"],"login":[],"free":["PROVIDERS:::claro"],"register":["PROVIDERS:::claro"]}},"AR":{"toBeDisabled":false,"allowedFree":false,"isActvie":true,"paymentMethods":{"claro":{"displayName":"Claro","logo":"\/img\/partners\/claro","gateway":"GATEWAYS:::smtgate"},"default":{"multipleFreePlans":false,"plans":{"100":{"smsKey":"Drive100","price":95,"isPopular":false},"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"$${v} ARS","currencySymbol":"$","planName":"NONE","currency":"ARS","type":"NONE"},"25":{"smskey":"Drive25","price":0,"isPopular":false},"300":{"smsKey":"Drive300","price":280,"isPopular":false},"50":{"smsKey":"Drive50","price":50,"isPopular":false},"75":{"smsKey":"Drive75","price":70,"isPopular":false,"planName":"TEXT_PGS_OFFERS_ARGENTINA_75_ARGENTINA_SUSCRIPCION_75GB","type":"MOTOROLAPROMO75"}},"exclude":false}},"name":"Argentina","icon":"\/img\/AR_round.png","motorolaPromo":true,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::AR:::paymentMethods:::claronegocio","isActive":true}},"region":"argentina","providers":{"choose":["PROVIDERS:::claro","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claro"],"register":["PROVIDERS:::claro"]}},"PE":{"toBeDisabled":false,"allowedFree":false,"isActvie":true,"paymentMethods":{"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"S\/.${v} PEN","currencySymbol":"S\/.","planName":"NONE","currency":"PEN","type":"NONE"},"25":{"smskey":"Drive25","price":0,"isPopular":false},"1024":{"smsKey":"Drive1T","price":20,"isPopular":false},"150":{"smsKey":"Drive150","price":5,"isPopular":true},"75":{"smsKey":"Drive75","price":3,"isPopular":false}},"exclude":false},"claromovil":{"displayName":"Claro mÃ³vil","logo":"\/img\/partners\/claro-movil","gateway":"GATEWAYS:::smtgate"}},"name":"PerÃº","icon":"\/img\/PE_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::PE:::paymentMethods:::claronegocio","isActive":true}},"region":"peru","providers":{"choose":["PROVIDERS:::claromovil","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claromovil"],"register":["PROVIDERS:::claromovil"]}},"NI":{"toBeDisabled":false,"allowedFree":false,"paymentMethods":{"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"$${v} USD","currencySymbol":"$","planName":"NONE","currency":"USD","type":"NONE"},"25":{"smsKey":"Drive25","price":0,"isPopular":false},"1024":{"smsKey":"Drive1T","price":9.2,"isPopular":false},"150":{"smsKey":"Drive150","price":2,"isPopular":true},"75":{"smsKey":"Drive75","price":1.05,"isPopular":false}},"exclude":false},"claromovil":{"displayName":"Claro mÃ³vil","logo":"\/img\/partners\/claro-movil","gateway":"GATEWAYS:::smtgate"}},"name":"Nicaragua","icon":"\/img\/NC_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::NC:::paymentMethods:::claronegocio","isActive":true}},"region":"nicaragua","isActive":true,"providers":{"choose":["PROVIDERS:::claromovil","PROVIDERS:::claronegocio","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claromovil"],"register":["PROVIDERS:::claromovil"]}},"EC":{"toBeDisabled":false,"allowedFree":false,"paymentMethods":{"claronegocio":{"displayName":"Negocio","logo":"\/img\/partners\/mail","exclude":true,"gateway":"GATEWAYS:::claronegocio"},"default":{"multipleFreePlans":false,"plans":{"default":{"quotaUnity":"QUOTA_UNITIES:::gb","compoundPrice":"$${v} USD","currencySymbol":"$","planName":"NONE","currency":"USD","type":"NONE"},"25":{"smsKey":"Drive25","price":0,"isPopular":false},"1024":{"smsKey":"Drive1T","price":10.07,"isPopular":false},"150":{"smsKey":"Drive150","price":2.23,"isPopular":true},"75":{"smsKey":"Drive75","price":1.11,"isPopular":false}},"exclude":false},"claromovil":{"displayName":"Claro mÃ³vil","logo":"\/img\/partners\/claro-movil","gateway":"GATEWAYS:::smtgate"}},"name":"Ecuador","icon":"\/img\/EC_round.png","motorolaPromo":false,"microsites":{"claronegocio":{"paymentMethods":"COUNTRIES:::EC:::paymentMethods:::claronegocio","isActive":true}},"region":"ecuador","isActive":true,"providers":{"choose":["PROVIDERS:::claromovil","PROVIDERS:::claronegocio","PROVIDERS:::email"],"login":[],"free":["PROVIDERS:::claromovil"],"register":["PROVIDERS:::claromovil"]}}}
+
+  And Validate promo            # steps.LandingSteps.validatePromo()
+17:59:29.498 [Forwarding screenshot on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]' for 'GET' to 'http://localhost:18552/session/8e18a09ffa100d19e8f5a64dc02471ec/screenshot'
+17:59:29.498 [Forwarding screenshot on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552] for GET '/session/8e18a09ffa100d19e8f5a64dc02471ec/screenshot'
+17:59:30.239 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/8e18a09ffa100d19e8f5a64dc02471ec/screenshot HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-4 (java windows)
+Cache-Control: no-cache
+host: localhost:18552
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 1706652
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+17:59:30.247 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:18552 for channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]
+false
+17:59:30.331 [Forwarding close on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]' for 'DELETE' to 'http://localhost:18552/session/8e18a09ffa100d19e8f5a64dc02471ec/window'
+17:59:30.332 [Forwarding close on session 8e18a09ffa100d19e8f5a64dc02471ec to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552] for DELETE '/session/8e18a09ffa100d19e8f5a64dc02471ec/window'
+17:59:30.432 [AsyncHttpClient-7-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - Unexpected I/O exception on channel [id: 0x7547d2c7, L:/127.0.0.1:57819 - R:localhost/127.0.0.1:57811]
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:648)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:583)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:500)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:462)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+17:59:30.432 [AsyncHttpClient-7-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Closing Channel [id: 0x7547d2c7, L:/127.0.0.1:57819 - R:localhost/127.0.0.1:57811] 
+17:59:30.435 [AsyncHttpClient-7-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - Channel Closed: [id: 0x7547d2c7, L:/127.0.0.1:57819 ! R:localhost/127.0.0.1:57811] with attribute DISCARD
+17:59:30.452 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/8e18a09ffa100d19e8f5a64dc02471ec/window HTTP/1.1
+User-Agent: selenium/4.0.0-alpha-4 (java windows)
+host: localhost:18552
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Length: 12
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+
+17:59:30.453 [AsyncHttpClient-3-1] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:18552 for channel [id: 0x1d1622ac, L:/127.0.0.1:57810 - R:localhost/127.0.0.1:18552]
+      java.lang.NullPointerException: Cannot invoke "org.asynchttpclient.ws.WebSocket.sendCloseFrame(int, String)" because "this.socket" is null
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.close(NettyWebSocket.java:116)
+	at org.openqa.selenium.devtools.Connection.close(Connection.java:127)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:192)
+	at pages.utils.SeleniumDriver.tearDown(SeleniumDriver.java:83)
+	at steps.AfterActions.tearDown(AfterActions.java:26)
+
+]]></system-out>
+    <system-err><![CDATA[sep. 14, 2023 5:59:18 P. M. io.cucumber.junit.Cucumber <init>
+WARNING: By default Cucumber is running in --non-strict mode.
+This default will change to --strict and --non-strict will be removed.
+You can use --strict or @CucumberOptions(strict = true) to suppress this warning
+Starting Microsoft Edge WebDriver 116.0.1938.81 (bc0eb28b55bd39571b5d9b4b46f78b06ab9e80b0) on port 18552
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+sep. 14, 2023 5:59:22 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,83 @@
+# To execute this docker-compose yml file use `docker-compose -f docker-compose-v3.yml up`
+# Add the `-d` flag at the end for detached execution
+# To stop the execution, hit Ctrl+C, and then `docker-compose -f docker-compose-v3.yml down`
+version: "3"
+services:
+  chrome:
+    image: selenium/node-chrome:4.5.3-20221024
+    container_name: chrome
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_NODE_MAX_SESSIONS=2
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+    ports:
+      - "6900:5900"
+    networks:
+      - default
+
+  firefox:
+    image: selenium/node-firefox:4.5.3-20221024
+    container_name: firefox
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_NODE_MAX_SESSIONS=2
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+    ports:
+      - "6902:5900"
+    networks:
+      - default
+
+  edge:
+    image: selenium/node-edge:4.5.3-20221024
+    container_name: edge
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_NODE_MAX_SESSIONS=2
+      - SE_NODE_OVERRIDE_MAX_SESSIONS=true
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+    ports:
+      - "6901:5900"
+    networks:
+      - default
+
+  selenium-hub:
+    image: selenium/hub:latest
+    container_name: selenium-hub
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"
+    networks:
+      - default
+
+  maven:
+    image: maven:3.3-jdk-8
+    container_name: maven
+    shm_size: 1gb
+    volumes:
+      - ./:/usr/src/mymaven
+    working_dir: /usr/src/mymaven
+    networks:
+      - default
+    links:
+      - selenium-hub
+    command: "mvn clean test -Dcucumber.filter.tags=$TAG -Dbrowser=$BROWSER"
+    #command: tail -F /usr/src/mymaven/docker-compose.yml
+
+networks:
+  default:
+    driver: bridge
